@@ -223,4 +223,6 @@ export const ingressoService = {
   }
 }
 
+// Exportar a instância api tanto como default quanto nomeada
+export { api }
 export default api
