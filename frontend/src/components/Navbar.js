@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <nav className="bg-blue-600 p-4 text-white shadow-md">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-xl font-bold">
+        <Link to="/dashboard" className="text-xl font-bold">
           Feira Virtual
         </Link>
         <div className="flex items-center space-x-4">
