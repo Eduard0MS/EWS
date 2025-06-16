@@ -151,14 +151,15 @@ npm start
 - **Backend API**: http://localhost:8000/api/
 - **Admin Django**: http://localhost:8000/admin/
 
-## Desenvolvedor
+## Desenvolvedores
 
 **Eduardo Silva** - [GitHub](https://github.com/Eduard0MS)
+**Thiago Ribeiro** - [GitHub](https://github.com/Thisgo1)
+**Fabio Parra** - [GitHub](https://github.com/flbparra)
+**Gabriel Bismarck** - [GitHub](https://github.com/gabrielbismarck)
 
 ## Licença
 
 Este projeto está sob a licença MIT. Veja o arquivo `LICENSE` para mais detalhes.
 
 ---
-
-**Deixe uma estrela se você gostou do projeto!**
