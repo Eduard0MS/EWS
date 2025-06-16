@@ -145,11 +145,64 @@ npm start
 - `GET|POST /api/produtos/` - Produtos
 - `GET|POST /api/ingressos/` - Ingressos
 
+## Documentação Automática
+
+### Gerar Documentação com Sphinx
+
+O projeto inclui documentação automática gerada a partir dos docstrings do código Python usando Sphinx.
+
+#### Pré-requisitos
+
+#### Comandos para Gerar Documentação
+
+**Windows:**
+
+```bash
+# Navegar para o diretório de documentação
+cd backend/docs
+
+# Gerar documentação HTML
+.\make.bat html
+
+# Abrir documentação no navegador
+start build/html/index.html
+```
+
+**Linux/Mac:**
+
+```bash
+# Navegar para o diretório de documentação
+cd backend/docs
+
+# Gerar documentação HTML
+make html
+
+# Abrir documentação no navegador
+open build/html/index.html
+```
+
+#### Estrutura da Documentação
+
+A documentação é gerada automaticamente e inclui:
+
+- **Models**: Feira, Expositor, Produto, Ingresso
+- **Serializers**: Validação e formatação de dados
+- **Views**: APIs REST e endpoints
+- **Authentication**: Sistema de autenticação
+- **Permissions**: Controle de acesso
+
+#### Localização dos Arquivos
+
+- **Configuração**: `backend/docs/source/conf.py`
+- **Índice Principal**: `backend/docs/source/index.rst`
+- **HTML Gerado**: `backend/docs/build/html/`
+
 ## Links Úteis
 
 - **Frontend**: http://localhost:3000
 - **Backend API**: http://localhost:8000/api/
 - **Admin Django**: http://localhost:8000/admin/
+- **Documentação**: `backend/docs/build/html/index.html` (após gerar)
 
 ## Desenvolvedores
 
