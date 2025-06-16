@@ -49,6 +49,15 @@ Um sistema completo para gestão de feiras virtuais, desenvolvido com **Django R
 # Navegar para o diretório do backend
 cd backend
 
+# Criar ambiente virtual (recomendado)
+python -m venv venv
+
+# Ativar ambiente virtual
+# Windows:
+venv\Scripts\activate
+# Linux/Mac:
+source venv/bin/activate
+
 # Instalar dependências
 pip install -r requirements.txt
 
