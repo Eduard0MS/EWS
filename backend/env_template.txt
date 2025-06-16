@@ -1,0 +1,12 @@
+DEBUG=True
+SECRET_KEY=django-insecure-hk1wp%v*_tls!+e2%osu%dkb=ltb1_iq+8uuf4da8u0iff5aa3
+
+# Database Configuration
+USE_POSTGRESQL=False
+
+# PostgreSQL settings (usado apenas se USE_POSTGRESQL=True)
+DB_NAME=feira_system_db
+DB_USER=postgres
+DB_PASSWORD=postgres
+DB_HOST=localhost
+DB_PORT=5432 

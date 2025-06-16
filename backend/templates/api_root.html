@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sistema de Gestão de Feiras</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBQAAFgAAACgAAAAQAAAAIAAAAAEACAAAAAAAAAEAAAAAAAAAAAAAAAEAAAAAAAAAAAAA"
+    />
+    <style>
+      body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        line-height: 1.6;
+        margin: 0;
+        padding: 40px 20px;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #333;
+        min-height: 100vh;
+      }
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        background: white;
+        padding: 40px;
+        border-radius: 10px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      }
+      h1 {
+        color: #4a5568;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 2.5em;
+      }
+      .intro {
+        text-align: center;
+        margin-bottom: 40px;
+        color: #666;
+        font-size: 1.1em;
+      }
+      .endpoints {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        margin-bottom: 40px;
+      }
+      .endpoint-card {
+        background: #f7fafc;
+        padding: 20px;
+        border-radius: 8px;
+        border-left: 4px solid #667eea;
+      }
+      .endpoint-card h3 {
+        margin-top: 0;
+        color: #4a5568;
+      }
+      .endpoint-card a {
+        color: #667eea;
+        text-decoration: none;
+        font-weight: 500;
+      }
+      .endpoint-card a:hover {
+        text-decoration: underline;
+      }
+      .features {
+        background: #edf2f7;
+        padding: 20px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+      }
+      .features h3 {
+        color: #4a5568;
+        margin-top: 0;
+      }
+      .features ul {
+        list-style: none;
+        padding: 0;
+      }
+      .features li {
+        padding: 5px 0;
+        padding-left: 20px;
+        position: relative;
+      }
+      .features li:before {
+        content: '✓';
+        color: #48bb78;
+        font-weight: bold;
+        position: absolute;
+        left: 0;
+      }
+      .footer {
+        text-align: center;
+        color: #666;
+        font-size: 0.9em;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>🎪 Sistema de Gestão de Feiras</h1>
+
+      <div class="intro">
+        <p>
+          Bem-vindo à API REST para gerenciamento de feiras, expositores,
+          produtos e ingressos.
+        </p>
+        <p>
+          <strong>Versão:</strong> 1.0.0 | <strong>Framework:</strong> Django
+          REST Framework
+        </p>
+      </div>
+
+      <div class="features">
+        <h3>📋 Funcionalidades</h3>
+        <ul>
+          <li>Gerenciamento completo de feiras (CRUD)</li>
+          <li>Controle de expositores por feira</li>
+          <li>Catálogo de produtos por expositor</li>
+          <li>Sistema de ingressos com autenticação</li>
+          <li>Autenticação JWT segura</li>
+          <li>Banco de dados PostgreSQL</li>
+        </ul>
+      </div>
+
+      <div class="endpoints">
+        <div class="endpoint-card">
+          <h3>🏛️ APIs Principais</h3>
+          <p><a href="/api/feiras/">Feiras</a> - Listar e gerenciar feiras</p>
+          <p>
+            <a href="/api/expositores/">Expositores</a> - Participantes das
+            feiras
+          </p>
+          <p><a href="/api/produtos/">Produtos</a> - Itens dos expositores</p>
+          <p>
+            <a href="/api/ingressos/">Ingressos</a> - Sistema de acesso (requer
+            login)
+          </p>
+        </div>
+
+        <div class="endpoint-card">
+          <h3>🔐 Autenticação</h3>
+          <p><a href="/auth/register/">Registro</a> - Criar nova conta</p>
+          <p><a href="/auth/login/">Login</a> - Acessar sistema</p>
+          <p><a href="/auth/profile/">Perfil</a> - Gerenciar conta</p>
+          <p><a href="/auth/logout/">Logout</a> - Sair do sistema</p>
+        </div>
+
+        <div class="endpoint-card">
+          <h3>⚙️ Administração</h3>
+          <p><a href="/admin/">Django Admin</a> - Interface administrativa</p>
+          <p><a href="/api/">API Browser</a> - Navegador da API</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>🚀 Desenvolvido com Django REST Framework e PostgreSQL</p>
+        <p>
+          Para mais informações, acesse a
+          <a href="/api/">documentação da API</a>
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
