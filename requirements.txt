@@ -6,4 +6,10 @@ django-filter==24.3
 djangorestframework-simplejwt==5.5.0
 psycopg[binary]==3.2.3
 sphinx==8.2.3
-sphinx-rtd-theme==3.0.2 
+sphinx-rtd-theme==3.0.2
+# Dependências adicionais para evitar problemas
+python-dotenv==1.0.1
+whitenoise==6.8.2
+gunicorn==23.0.0
+dj-database-url==2.3.0
+Pillow==11.0.0 
