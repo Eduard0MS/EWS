@@ -31,6 +31,7 @@ def register(request):
                     "email": user.email,
                     "first_name": user.first_name,
                     "last_name": user.last_name,
+                    "date_joined": user.date_joined,
                 },
                 "tokens": {
                     "refresh": str(refresh),
@@ -59,6 +60,7 @@ def login(request):
                     "email": user.email,
                     "first_name": user.first_name,
                     "last_name": user.last_name,
+                    "date_joined": user.date_joined,
                 },
                 "tokens": {
                     "refresh": str(refresh),
