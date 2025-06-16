@@ -1,4 +1,4 @@
-# FeiraSystem - Sistema de Gestão de Feiras
+# Feira Virtual - Sistema de Gestão de Feiras
 
 Um sistema completo para gestão de feiras virtuais, desenvolvido com **Django REST Framework** no backend e **React** no frontend.
 
