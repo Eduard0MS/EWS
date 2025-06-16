@@ -20,12 +20,16 @@ import Navbar from './components/Navbar'
 
 function AppContent() {
   const location = useLocation()
-  const showNavbar = location.pathname !== '/'
+  const isHomePage = location.pathname === '/'
+  const isPublicPage = ['/login', '/register'].includes(location.pathname)
+  const showNavbar = !isHomePage
 
   return (
     <div className="min-h-screen">
       {showNavbar && <Navbar />}
-      <div className={showNavbar ? 'container mx-auto p-4' : ''}>
+      <div
+        className={!isHomePage && !isPublicPage ? 'container mx-auto p-4' : ''}
+      >
         <Routes>
           {/* Rotas Públicas */}
           <Route path="/" element={<Home />} />
