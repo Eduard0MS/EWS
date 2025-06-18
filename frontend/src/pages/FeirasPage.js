@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { feiraService } from '../services/api'
+import { useNavigate } from 'react-router-dom'
 import Avatar from '../components/Avatar'
 import {
   BuildingStorefrontIcon,
@@ -15,6 +16,7 @@ import {
 } from '@heroicons/react/24/outline'
 
 function FeirasPage() {
+  const navigate = useNavigate()
   const [feiras, setFeiras] = useState([])
   const [loading, setLoading] = useState(true)
   const [showModal, setShowModal] = useState(false)
@@ -282,9 +284,7 @@ function FeirasPage() {
                     <span>Excluir</span>
                   </button>
                   <button
-                    onClick={() =>
-                      (window.location.href = `/expositores?feira=${feira.id}`)
-                    }
+                    onClick={() => navigate(`/expositores?feira=${feira.id}`)}
                     className="flex-1 flex items-center justify-center space-x-1 bg-emerald-50 text-emerald-600 px-3 py-2 rounded-lg hover:bg-emerald-100 transition-colors text-sm font-medium"
                   >
                     <UserGroupIcon className="h-4 w-4" />

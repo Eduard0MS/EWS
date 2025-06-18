@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { expositorService, feiraService } from '../services/api'
-import { useLocation } from 'react-router-dom'
+import { useLocation, useNavigate } from 'react-router-dom'
 import Avatar from '../components/Avatar'
 import {
   UserGroupIcon,
@@ -31,6 +31,7 @@ function ExpositoresPage() {
   })
 
   const location = useLocation()
+  const navigate = useNavigate()
   const urlParams = new URLSearchParams(location.search)
   const feiraFromUrl = urlParams.get('feira')
 
@@ -298,7 +299,7 @@ function ExpositoresPage() {
                   </button>
                   <button
                     onClick={() =>
-                      (window.location.href = `/produtos?expositor=${expositor.id}`)
+                      navigate(`/produtos?expositor=${expositor.id}`)
                     }
                     className="flex-1 flex items-center justify-center space-x-1 bg-purple-50 text-purple-600 px-3 py-2 rounded-lg hover:bg-purple-100 transition-colors text-sm font-medium"
                   >
